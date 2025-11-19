@@ -46,6 +46,7 @@ const SignUp = () => {
         onChangeText={(text) => setForm({ ...form, name: text })}
         label="Full Name"
         placeholder="Enter your name"
+        returnKeyType="next"
       />
       <CustomInput
         value={form.email}
@@ -53,6 +54,7 @@ const SignUp = () => {
         label="Email"
         placeholder="Enter your email"
         keyboardType="email-address"
+        returnKeyType="next"
       />
       <CustomInput
         value={form.password}
@@ -60,6 +62,7 @@ const SignUp = () => {
         label="Password"
         placeholder="Enter your password"
         secureTextEntry={true}
+        returnKeyType="done"
       />
       <CustomButton 
         onPress={submit}

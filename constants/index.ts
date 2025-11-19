@@ -14,6 +14,7 @@ import pencil from "@/assets/icons/pencil.png";
 import person from "@/assets/icons/person.png";
 import phone from "@/assets/icons/phone.png";
 import plus from "@/assets/icons/plus.png";
+import reset from "@/assets/icons/reset.png";
 import search from "@/assets/icons/search.png";
 import star from "@/assets/icons/star.png";
 import trash from "@/assets/icons/trash.png";
@@ -199,4 +200,5 @@ export const images = {
     star,
     trash,
     user,
+    reset,
 };

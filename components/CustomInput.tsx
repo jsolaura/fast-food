@@ -10,6 +10,7 @@ const CustomInput = ({
   label,
   secureTextEntry = false, 
   keyboardType = 'default', 
+  returnKeyType = 'default',
 }: CustomInputProps) => {
   const [isFocused, setIsFocused] = useState(false);
   return (
@@ -26,6 +27,7 @@ const CustomInput = ({
         onBlur={() => setIsFocused(false)}
         placeholder={placeholder}
         placeholderTextColor="#888"
+        returnKeyType={returnKeyType}
         className={cn('input', isFocused ? 'border-primary' : 'border-gray-300')}
       />
     </View>

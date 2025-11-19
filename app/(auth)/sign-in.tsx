@@ -43,6 +43,7 @@ const SignIn = () => {
         label="Email"
         placeholder="Enter your email"
         keyboardType="email-address"
+        returnKeyType="next"
       />
       <CustomInput
         value={form.password}
@@ -50,6 +51,7 @@ const SignIn = () => {
         label="Password"
         placeholder="Enter your password"
         secureTextEntry={true}
+        returnKeyType="done"
       />
       <CustomButton 
         onPress={submit}
